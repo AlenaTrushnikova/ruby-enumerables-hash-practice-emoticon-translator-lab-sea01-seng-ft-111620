@@ -8,7 +8,6 @@ def load_library(path)
   emoticon_hash = {}
   
   emoticons.each do |english_word, emoticon_set|
-    emoticon_hash["get_emoticon"][emoticon_set.first] = emoticon_set.last
     emoticon_hash[english_word] = {:english => emoticon_set.first, :japanese => emoticon_set.last}
   end
   emoticon_hash  
@@ -21,10 +20,7 @@ end
 def get_english_meaning(path, emoticon)
   # code goes here
   emoticon_hash = load_library(path)
-  result = 
-  
-  #result = emoticon_hash["get_meaning"][emoticon]
-  
+  result = emoticon_hash[english_word](emoticon)
   if result == nil
     result = "Sorry, that emoticon was not found" 
   end

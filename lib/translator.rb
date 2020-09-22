@@ -27,6 +27,9 @@ def get_english_meaning(path, emoticon)
   # code goes here
   emoticon_hash = load_library(path)
   result = emoticon_hash.key(emoticon)
+  emoticon_hash.each do |english_word, emoticon_set|
+        emoticon_hash[english_word] = {:english => emoticon_set.first, :japanese => emoticon_set.last}
+  end
   if result == nil
     result = "Sorry, that emoticon was not found" 
   end

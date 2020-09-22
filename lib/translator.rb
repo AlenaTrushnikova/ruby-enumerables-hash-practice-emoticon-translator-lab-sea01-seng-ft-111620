@@ -20,7 +20,7 @@ end
 def get_english_meaning(path, emoticon)
   # code goes here
   emoticon_hash = load_library(path)
-  result = emoticon_hash[english_word](emoticon)
+  #result = emoticon_hash[english_word](emoticon)
   binding.pry
     if result == nil
       result = "Sorry, that emoticon was not found" 

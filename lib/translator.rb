@@ -9,7 +9,6 @@ def load_library(path)
   
   emoticons.map {|key, value| [key.to_sym, value]}.to_h
   
-  end
   binding.pry
   #emoticon_data = emoticons.each do |key.to_sym, value|
  #binding.pry

@@ -20,7 +20,7 @@ end
 def get_english_meaning(path, emoticon)
   # code goes here
   emoticon_hash = load_library(path)
-  binding.pry
+  
   
   #result = emoticon_hash["get_meaning"][emoticon]
   

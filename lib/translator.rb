@@ -7,8 +7,8 @@ def load_library(path)
   emoticons = YAML.load(File.read(path))
   emoticon_hash = {}
   
-  emoticons.each_with_object({}) do |(key,value), emoticon_hash| 
-  emoticon_hash[key.to_sym] = value
+  emoticons.map {|key, value| [key.to_sym, value]}.to_h
+  
   end
   binding.pry
   #emoticon_data = emoticons.each do |key.to_sym, value|

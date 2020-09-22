@@ -8,7 +8,7 @@ def load_library(path)
   
   emoticon_data = emoticons.each_with_object({}) do |(key, value), final_hash|
   end
- 
+ binding.pry
   
  
   emoticons.each do |english_word, emoticon_set|

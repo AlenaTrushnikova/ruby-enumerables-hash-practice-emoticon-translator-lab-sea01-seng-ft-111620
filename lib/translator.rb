@@ -7,7 +7,6 @@ def load_library(path)
   emoticons = YAML.load(File.read(path))
   
   emoticon_data = emoticons.each do |key, value|
-    
   end
  binding.pry
   

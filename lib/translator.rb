@@ -5,9 +5,8 @@ require 'yaml'
 def load_library(path)
   # code goes here
   emoticons = YAML.load(File.read(path))
-  hash.symbolize_keys
   
-  emoticon_data = emoticons.each do |key, value|
+  emoticon_data = emoticons.symbolize_keys.each do |key, value|
   end
  binding.pry
   

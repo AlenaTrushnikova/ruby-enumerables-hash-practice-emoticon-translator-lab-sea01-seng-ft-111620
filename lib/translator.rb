@@ -19,7 +19,7 @@ def get_japanese_emoticon(path, emoticon)
   result = nil
   
   emoticon_hash.each do |english_word,emoticon_dictionary|
-    if english_word == emoticon
+    if emoticon_dictionary[:english] == emoticon
       result = emoticon_dictionary[:japanese]
     end
   end

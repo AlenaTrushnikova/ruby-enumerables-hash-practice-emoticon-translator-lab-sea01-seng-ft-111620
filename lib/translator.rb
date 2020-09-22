@@ -9,12 +9,16 @@ def load_library(path)
   
   emoticons.each do |english_word, emoticon_set|
     #binding.pry
-    tranlator_hash = {english_word => emoticon_set}
+    
+    emoticon_hash[english_word] = {}
+    
+    #tranlator_hash = {english_word => emoticon_set}
     
     
-    emoticon_hash["get_emoticon"][emoticon_set.first] = emoticon_set.last
-    emoticon_hash["get_meaning"][emoticon_set.last] = english_word
+    #emoticon_hash["get_emoticon"][emoticon_set.first] = emoticon_set.last
+    #emoticon_hash["get_meaning"][emoticon_set.last] = english_word
   end
+  puts emoticon_hash
   emoticon_hash  
 end
 

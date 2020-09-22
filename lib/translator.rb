@@ -6,10 +6,10 @@ def load_library(path)
   # code goes here
   emoticons = YAML.load(File.read(path))
   emoticon_hash = {}
-  
+  binding.pry
   emoticon_hash["get_emoticon"] = {}
   emoticon_hash["get_meaning"] = {}
-  binding.pry
+  
  
   emoticons.each do |english_word, emoticon_set|
     emoticon_hash["get_emoticon"][emoticon_set.first] = emoticon_set.last

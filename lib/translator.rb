@@ -8,8 +8,7 @@ def load_library(path)
   
   emoticons.each_with_object({}){|(key,value), emoticon_hash| emoticon_hash[key.to_sym] = value}
   binding.pry
-  emoticon_data = emoticons.each do |key.to_sym, value|
-  end
+  #emoticon_data = emoticons.each do |key.to_sym, value|
  #binding.pry
   
  

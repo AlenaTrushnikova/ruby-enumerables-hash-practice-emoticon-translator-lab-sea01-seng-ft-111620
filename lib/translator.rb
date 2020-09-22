@@ -6,7 +6,7 @@ def load_library(path)
   # code goes here
   emoticons = YAML.load(File.read(path))
  
-  emoticon_hash = emoticons.each_with_object({}) do |(keay, value)|
+  emoticon_hash = emoticons.each_with_object({}) do |(keay, value), final|
   
  
   emoticons.each do |english_word, emoticon_set|

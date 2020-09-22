@@ -8,6 +8,8 @@ def load_library(path)
   emoticon_hash = {}
   
   emoticons.each do |english_word, emoticon_set|
+    emoticon_hash["get_emoticon"][emoticon_set.first] = emoticon_set.last
+    binding.pry
     emoticon_hash[english_word] = {:english => emoticon_set.first, :japanese => emoticon_set.last}
   end
   emoticon_hash  

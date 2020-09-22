@@ -15,6 +15,7 @@ end
 
 def get_japanese_emoticon(path, emoticon)
   # code goes here
+  moticon_hash = load_library(path)
   
 end
 

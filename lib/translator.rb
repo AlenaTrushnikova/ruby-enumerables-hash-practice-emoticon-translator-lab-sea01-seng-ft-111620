@@ -5,7 +5,7 @@ require 'yaml'
 def load_library
   # code goes here
   emoticons_hash = YAML.load(File.read("./lib/emoticons.yml"))
-  emoticon_hash
+  p emoticon_hash
   
   emoticon_hash["get_emoticon"] = {}
   emoticon_hash["get_meaning"] = {}
